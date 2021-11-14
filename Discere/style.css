@@ -169,10 +169,60 @@ div{
     margin: 20px;
 }
 .trilha{
+    display: flex;
+    flex-direction: column;
     margin: 20px;
-    background-color: red;
     height: 480px;
-    width: 400px;
+    width: 390px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 18px;
+}
+.trilha h3{
+    font-weight: 900;
+    margin: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #2667CD 0%, #24FE96 100%);
+    height: 50px;
+    width: cover;
+}
+.seccao-aula .Titulo{
+    padding-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 380px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+.bloco-superior{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aula-quadro{
+    flex-direction: column;
+}
+ul.a{
+    list-style-type: none;
+    height: 40px;
+    width: cover;
+    margin-bottom: 150px;
+}
+ul li{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color: #EEEEEE;    
+}
+.trilha .seccao-aula{
+    display: flex;
+    flex-direction: column;
 }
 .sobre-curso{
     margin: 20px;
@@ -194,15 +244,69 @@ div{
     line-height: 18px;
     color: black;
 }
-.comentarios{
-    width:770px;
+.seccao-comentarios{
+    width:600px;
     padding-left: 100px;
 }
-.comentarios h3{
+
+.bloco-comentario + .sub-comentario {
+    padding-left: 80px;
+}
+.sub-comentario .comentario{
+    width: 600px;
+    align-items: flex-start;
+}
+.sub-comentario .comentario span{
+    padding-left: 380px;
+}
+.seccao-comentarios h3{
     padding-left: 5px;
     border-left: solid 4px #24FE96;
     font-weight: 700;
     color: #474747;
     font-size: 3.5rem;
     line-height: 41px;
+}
+.bloco-comentario{
+    font-family: 'Roboto',sans-serif;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.bloco-comentario img{
+    border-radius: 100%;
+}
+.informacoes-comentario >div{
+    margin-left: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.informacoes-comentario strong{
+    font-weight: 500;
+    color: black;
+    font-size: 2rem;
+    line-height: 30px;
+}
+.informacoes-comentario label{
+    color: #959393;
+}
+.comentario{
+    align-items: flex-end;
+    flex-direction: column;
+}
+.comentario span{
+    color: #959393;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comentario span img{
+    
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.comentario p{
+    padding-left: 80px;
+    font-size: 1.6rem;
+    line-height: 28px;
+    text-align: justify;
 }
