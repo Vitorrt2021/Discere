@@ -97,6 +97,7 @@ h1 {
     font-weight: bold;
     font-family: 'Alef',sans-serif;
     font-size: 1.4rem;
+
     line-height: 21px;
     background-color: white;
     height: 64px;
@@ -107,9 +108,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin:-10.5px 0px 0px -50px; /* superior | direita | inferior | esquerda */
+    margin:-0px 0px 0px -50px; /* superior | direita | inferior | esquerda */
     padding-left: 20px;
-    
 }
 
 .Botao-navegacao-selecionado > img {
@@ -291,7 +291,8 @@ div{
   display: flex;
 }
 .conteudo{
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 100px;
   color: black;
 }
@@ -299,15 +300,37 @@ div{
 .conteudo p{
   color: #474747;
 }
+.bloco-superior{
+  flex-direction: column;
+}
 
 .video-aula{
   margin: 20px;
 }
+.checkBox, .checkBox ~div{
+  display: none;
+  transition-duration: 0.5s;
+}
+@keyframes aparecer{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.checkBox:checked ~ div{
+  display:flex;
+  transition-duration: 0.5s;
+  animation-name:aparecer;
+  animation-duration:0.5s;
+  animation-fill-mode: forwards;
+}
+
 .trilha{
   display: flex;
   flex-direction: column;
   margin: 20px;
-  height: 480px;
   width: 390px;
   font-family: 'Roboto',sans-serif;
   font-weight: 300;
@@ -325,35 +348,42 @@ div{
   height: 50px;
   width: cover;
 }
+.seccao-aula {
+  align-items: end;
+}
 .seccao-aula .Titulo{
   display: flex;
   padding-left: 10px;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   height: 50px;
   width: 380px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
-.bloco-superior{
-  display: flex;
-  flex-wrap: wrap;
+.seccao-aula .Titulo label{
+  width: 300px;
 }
 .aula-quadro{
   flex-direction: column;
 }
 ul.a{
   list-style-type: none;
-  height: 40px;
+  height: 160px;
   width: cover;
-  margin-bottom: 150px;
+  
+}
+ul li:hover{
+  background-color: #ddd;
+  transition-duration: 0.3s;
 }
 ul li{
+ cursor: pointer;
   height: 40px;
   width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2px;
+  margin: 1px;
   background-color: #EEEEEE;    
 }
 .trilha .seccao-aula{
