@@ -27,7 +27,7 @@ body {
 
 h1 {
     font-family: 'Righteous', cursive;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     line-height: 19px;
     color: #3EA1D9;
     margin-left: 180px;
@@ -39,7 +39,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 228px;
+    width: 328px;
     height: 38px;
     background-color: white;
     border: solid 2px #D1D1D1;
@@ -55,7 +55,7 @@ h1 {
 .area-busca input {
     background-color: rgba(0,0,0,0);
     border: none;
-    margin-left: -10px;
+    margin-left: -50px;
     outline-style: none;
 }
 
@@ -69,7 +69,7 @@ h1 {
     color: white;
     font-family: 'Alef', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.7rem;
     background: linear-gradient(269.55deg, rgba(40, 121, 216, 0.41) -3.2%, rgba(24, 206, 31, 0.76) 115.98%);
     border-radius: 40px;
     margin-left: 800px;
@@ -82,7 +82,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     font-family: 'Alef',sans-serif;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: white;
     padding-left: 53px;
     padding-right: 126px;
@@ -96,7 +96,7 @@ h1 {
     color: #003087;
     font-weight: bold;
     font-family: 'Alef',sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     line-height: 21px;
     background-color: white;
     height: 64px;
@@ -119,7 +119,7 @@ h1 {
 .Botao-navegacao-nao-selecionado {
     color: white;
     font-family: 'Alef',sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     line-height: 21px;
     cursor: pointer;
     height: 64px;
@@ -295,6 +295,11 @@ div{
   padding-left: 100px;
   color: black;
 }
+
+.conteudo p{
+  color: #474747;
+}
+
 .video-aula{
   margin: 20px;
 }
@@ -356,22 +361,23 @@ ul li{
   flex-direction: column;
 }
 .sobre-curso{
+  padding: 10px;
   margin: 20px;
   border: solid 2px #D1D1D1;
-  width: 600px;
+  width: 770px;
 }
 .sobre-curso p{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 18px;
 }
 .sobre-curso strong{
-  font-weight: 500;
+  font-weight: 700;
 }
 .sobre-curso h3{
   font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 18px;
-  color: black;
+  font-size: 1.7rem;
+  line-height: 30px;
+  color: #232323;
 }
 .seccao-comentarios{
   width:800px;
