@@ -1,67 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <link rel='stylesheet' type='text/css' href='./style.css' >
-    <link rel="icon" type="imagem/svg" href="./icones/icone_marca.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discere</title>
-</head>
-<body>
-    <header>
-        <div class='barra-superior'>
-            <div class='bloco-esquerdo'>
-                <img id='BotaoMenu' src="./icones/icone_BotaoMenu.svg" alt="Botão menu lateral">
-                <div class='logo'>
-                    <img class='logo' src="./icones/icone_marca.svg" alt="Logo Discere">
-                    <h1>Discere</h1>
-                </div>
-                <div class='area-busca'>
-                    <img src="./icones/lupa.svg" alt='Lupa'>
-                    <input type="text" placeholder="Buscar">
-                    <img src="./icones/seta_paraBaixo.svg" alt='Seta'>
-                </div>
-            </div>
-            <div class='bloco-direito'>
-                <div class='denario'>
-                    <label>Denario 2.000</label>
-                    <img src="./icones/denario_trevoVerde.svg" alt="Trevo">
-                </div>
-                <div class='bloco-nome-usuario'>
-                    <img  src="./icones/icone_conversa.svg" alt='Conversar'>
-                    <img class='avatar' src="./icones/avatar_usuario.svg" alt="Avatar">
-                    <label>Eitor Roberto</label>
-                    <img src="./icones/seta_paraBaixo.svg" alt='Seta para baixo'>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <nav class='barra-lateral'>
-            <div class='Botao-navegacao-nao-selecionado '>
-                <img src="./icones/loja_naoSelecionada.svg">
-                <label>Loja</label>
-            </div>
-            <div class='Botao-navegacao-nao-selecionado '>
-                <img src="./icones/carrinho_naoSelecionado.svg">
-                <label>Carrinho</label>
-            </div>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="imagem/svg" href="./icones/icone_marca.svg" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Discere">
+        <title>Discere</title>
+        <link href="./discere-index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
             
-            <div class='Botao-navegacao-nao-selecionado '>
-                <img src="./icones/grafico_naoSelecionado.svg">
-                <label>Meus Cursos</label>
+            <nav role="navigation">
+                
+                <div id="menuToggle">
+                    
+                    <input type="checkbox" />
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                        
+                    <ul id="menu">
+                        <div class="Botao-navegacao-nao-selecionado ">
+                            <img src="./icones/loja_naoSelecionada.svg">
+                            <label>Loja</label>
+                        </div>
+                        <div class="Botao-navegacao-nao-selecionado ">
+                            <img src="./icones/carrinho_naoSelecionado.svg">
+                            <label>Carrinho</label>
+                        </div>
+                        <div class="Botao-navegacao-nao-selecionado ">
+                            <img src="./icones/grafico_naoSelecionado.svg">
+                            <label>Meus Cursos</label>
+                        </div>
+                        <div class="Botao-navegacao-selecionado ">
+                            <img src="./icones/play_Selecionando.svg">
+                            <label>Sala de Aula</label>
+                        </div>
+                        <div class="Botao-navegacao-nao-selecionado ">
+                            <img src="./icones/caminhao_naoSelecionado.svg">
+                            <label>Sair</label>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <img class="logo" src="./icones/icone_marca.svg" alt="Logo Discere">  
+            </img>
+            <h1>Discere</h1>
+            <div class="area-busca">
+                <img src="./icones/lupa.svg" alt="Lupa">
+                <input type="text" placeholder="Buscar">
+                <img src="./icones/seta_paraBaixo.svg" alt="Seta">
             </div>
-            <div class='Botao-navegacao-selecionado '>
-                <img src="./icones/play_Selecionando.svg">
-                <label>Sala de Aula</label>
+            <div class="denario">
+                <label>Denario 2.000</label>
+                <img src="./icones/denario_trevoVerde.svg" alt="Trevo">
             </div>
-            
-            <div class='Botao-navegacao-nao-selecionado '>
-                <img src="./icones/caminhao_naoSelecionado.svg">
-                <label>Sair</label>
+            <div class="bloco-nome-usuario">
+                <img src="./icones/icone_conversa.svg" alt="Conversar">
+                <img class="avatar" src="./icones/avatar_usuario.svg" alt="Avatar">
+                <label>Eitor Roberto</label>
+                <img src="./icones/seta_paraBaixo.svg" alt="Seta para baixo">
             </div>
-        </nav>
-
+        </header> 
+        
         <section class='conteudo'>
             <div class='bloco-superior'>    
                 <section class='video-aula'>
@@ -142,6 +146,5 @@
         </footer>
 
     </main>
-
-</body>
+    </body>
 </html>
