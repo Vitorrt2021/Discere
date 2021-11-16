@@ -96,12 +96,17 @@ Barra superior
 
 .iconmarca {
 	position: absolute;
-	width: 70px;
+	width: 100px;
 	height: 68px;
 	left: 83px;
 	top: 12px;
 }
-
+.iconmarca img{
+	margin-left: 20px;
+}
+.discerepos{
+	margin-left: 20px;
+}
 .discerepos {
 	position: absolute;
 	width: 83px;
@@ -378,6 +383,9 @@ Barra lateral aqui Athos
 	font-size: 22px;
 }
 
+nav{
+	margin-top: -30px;
+  }
 /*
  * Para lista vir para a direita
  */
