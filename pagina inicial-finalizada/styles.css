@@ -71,6 +71,9 @@
 	src: url(./fontes/Montserrat/Montserrat-Regular.ttf) format("truetype");
 }
 
+main{
+	width: 100%;
+}
 /*ESPECIFICAÇOES QUANTO  A COR, FONTE, BORDA*/
 
 /*
@@ -383,9 +386,7 @@ Barra lateral aqui Athos
 	font-size: 22px;
 }
 
-nav{
-	margin-top: -30px;
-  }
+
 /*
  * Para lista vir para a direita
  */
@@ -459,7 +460,9 @@ Tab filter
 	bottom: 0%;
 	border: 1px solid #5B5C60;
 }
-
+nav{
+	margin-top: -30px;
+}
 /* 
 Compras
 */
