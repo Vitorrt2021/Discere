@@ -1,3 +1,9 @@
+ /* 
+    É recomendado criar ao menos duas folhas de estilos para separar estilos gerais de estilos mais específicos.
+    set-style.css => para estilos padrões como as variáveis de estilos, estilos para body, button, input, etc. Tudo que for genérico
+    style.css => para estilos de elementos mais específicos definidos por id ou class
+*/
+
 /*ESPECIFICAÇOES QUANTO  A COR, FONTE, BORDA*/
 
 :root {
@@ -103,14 +109,14 @@ Barra superior
 	height: 68px;
 	left: 83px;
 	top: 12px;
-}
+}/* O ideal é manter um padrão de codificação entre a estilização dos elementos.. ou pula uma linha em todos, ou não pula em nenhuma*/
 .iconmarca img{
 	margin-left: 20px;
 }
-.discerepos{
+.discerepos{/* O ideal é manter um padrão de codificação entre a estilização dos elementos.. ou as chaves ficam coladas com o elemento ou separada*/
 	margin-left: 20px;
 }
-.discerepos {
+.discerepos {/* Todas os estilos dispostos aqui poderiam estar na estilização do elemento acima*/
 	position: absolute;
 	width: 83px;
 	height: 33px;
@@ -184,7 +190,7 @@ Barra superior
 	bottom: 26.17%;
 }
 
-.den {
+.den { /* É uma boa prática criar atributos mais descritivos.*/
 	position: absolute;
 	left: 5.5%;
 	right: 36%;

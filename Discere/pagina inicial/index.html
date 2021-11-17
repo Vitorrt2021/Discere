@@ -1,3 +1,17 @@
+<!-- Resumo => 
+        1ª O design não ficou responsivo devido a definição da largura dos elementos estar em px e não em %
+        Os elementos que terão largura semelhante a largunra da tela deve ser definido com width: 100%.
+        Desse modo em qualquer tela este elemento vai preencher perfeitamente. No caso de vocês, escolheram a
+        largura de 1920px para a barra superior, o resultado é uma quebra se o monitor tiver largura menor a isso.
+        
+        2º Recomendo manter a programação em uma única lingua, preferencialmente inglês.
+        
+        3ª O ideal é que as pastas images, icons e fonts sejam subpastas da pasta assets. dentro da pasta assets podem separar 
+        o que é icone(pasta icons) do que é imagem(pasta images) e fonte(pasta fonts).
+
+        Vocês encontrarão mais feedback ao longo dos arquivos html css 
+     -->
+
 <html lang="en">
 
 <head>
@@ -14,16 +28,17 @@
 </head>
 
 <body>
-    // Barra superior
+    // Barra superior <!--Comentários no HTML é feito com <!-- --> -->
     <header>
-        <div class="barrasup">
+        <div class="barrasup"><!--  É recomendado manter a programação em uma única lingua, preferencialmente inglês.-->
             <div class="menu">
                 <!--<img src="icons/icone_BotaoMenu.svg">-->
             </div>
             <div class="iconmarca">
-                <img src="icons/icone_marca.svg">
+                <img src="icons/icone_marca.svg"> <!--O modo correto de fechamento das tags que fecham em si mesmo é /> no final
+                <img src="icons/icone_marca.svg" />-->
             </div>
-            <div class="discerepos">
+            <div class="discerepos"><!-- É uma boa prática criar atributos mais descritivos. -->
                 <span class="discere">Discere</span>
             </div>
             <div class='busca'>
@@ -50,19 +65,22 @@
     
     // Barra lateral
     <nav role="navigation">
-
+        <!-- Não é uma boa prática para a legibilidade do html essas linhas em branco, atrapalha a visibilidade da indentação-->
         <div id="menuToggle">
 
             <input type="checkbox" />
 
-            <span></span>
+            <span></span><!--O correto é utilizar um svg para criar estes elementos-->
             <span></span>
             <span></span>
 
-            <ul id="menu">
+            <ul id="menu"> <!--A presença da tag <ul> indica que dentro dela haverá <li>'s 
+                mas não está sendo o caso aqui. Desse modo, o correto seria usar uma <div> no lugar do <ul>
+                ou alterar essas <div>'s internas para <li>-->
                 <div class="Botao-navegacao-nao-selecionado ">
                     <img src="./icones-adicionais/loja_naoSelecionada.svg">
-                    <label>Loja</label>
+                    <label>Loja</label><!--A tag <label> é esperada quando for fazer referencia a um input
+                        nesse caso aqui deveriam usar a tag <span>-->
                 </div>
                 <div class="Botao-navegacao-nao-selecionado ">
                     <img src="./icones-adicionais/carrinho_naoSelecionado.svg">
@@ -84,7 +102,7 @@
         </div>
     </nav>
     <section>
-        <div class="tab-filter">
+        <div class="tab-filter"><!--As propriedades dessa <div>, poderia estar na propria <section> e essa <div> não seria necessaria-->
             <span class="populares">Mais populares</span>
             <span class="novo">Novo</span>
             <span class="inter">Intermediário e avançado</span>
@@ -95,7 +113,7 @@
         <div class="comprador">
             <div class="curso1">
                 <img class="foto1" src="images/curso1.png">
-                <span class="desc1">Javascript - Iniciante</span>
+                <span class="desc1">Javascript - Iniciante</span><!-- É uma boa prática criar atributos mais descritivos. -->
                 <img class="car1" src="icons/Icone-carrinho-compras.svg">
                 <img class="fav1" src="icons/icone-favoritar.svg">
                 <img class="comp1" src="icons/icone-compartilhar.svg" alt="">
